@@ -169,4 +169,11 @@ footer {
     body {
         margin: 0em 1em 0em 1em;
     }
+
+    article img {
+        
+        
+        height: 250px
+    }
 }
+
