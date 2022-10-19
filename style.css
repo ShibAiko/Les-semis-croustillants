@@ -5,7 +5,7 @@
 
 body
 {
-    background: linear-gradient(#e7ba5a, #f2e7bf);
+    background-color:#e7ba5a;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -47,11 +47,14 @@ nav a
 }
 
 nav ul li{
-    border: solid 1px black;
-    background-color: white;
+    
     list-style: none;
-    width: 100%;
+
     height: 2em;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #fff7cc, #dad0ac);
+    box-shadow:  7px 7px 14px #d0c7a4,
+                 -7px -7px 14px #ffffda;
 }
 
 #navbar
