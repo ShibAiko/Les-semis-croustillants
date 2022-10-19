@@ -131,7 +131,8 @@ audio
 
 form
 {
-    
+text-align: center;
+background-image: url("img/planche.png");
 }
 
 /*------------ Footer ------------*/
@@ -139,5 +140,4 @@ form
 footer
 {
     text-align: center;
-   
 }
