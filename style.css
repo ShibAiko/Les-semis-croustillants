@@ -10,6 +10,13 @@ body
     margin: 0 auto;
 }
 
+h2
+{
+    font-size: 3em;
+    font-family: "Handwriting";
+    text-align: center;
+}
+
 /*------------ En-tête ------------*/
 
 header
@@ -46,15 +53,14 @@ nav a
     text-decoration: none;
 }
 
-nav ul li{
-    
+nav ul li
+{
     list-style: none;
-
     height: 2em;
     border-radius: 6px;
     background: linear-gradient(145deg, #fff7cc, #dad0ac);
     box-shadow:  7px 7px 14px #d0c7a4,
-                 -7px -7px 14px #ffffda;
+                -7px -7px 14px #ffffda;
 }
 
 #navbar
@@ -100,8 +106,8 @@ article img
 
 h3
 {
-font-size: 2em;
-font-family: "Handwriting";
+    font-size: 2em;
+    font-family: "Handwriting";
 }
 
 span
@@ -111,6 +117,27 @@ span
 }
 
 .citation{
-font-family: "Handwriting";
-color: grey;
+    font-family: "Handwriting";
+    color: grey;
+}
+
+audio
+{
+    height: 25px;
+}
+
+
+/*----------- Formulaire ------------*/
+
+form
+{
+    
+}
+
+/*------------ Footer ------------*/
+
+footer
+{
+    text-align: center;
+   
 }
