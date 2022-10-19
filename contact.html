@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,60 +8,80 @@
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 id="blason"><img src="img/blason.png" alt="Les semis-croustillants"></h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="leClan.html">Le Clan</a></li>
+                <li><a href="lesAnnecdotes.html">Annecdotes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Rejoignez nous !</h2>
+    </section>
+    <div class="formulaire">
+        <form method="POST" action="monProgramme.php">
+            <h3>Infos personnelles</h3>
+            <fieldset id="infos">
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" placeholder="Entrez votre prénom" maxlength="20" minlength="2"
+                    id="prenom">
+                <br>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" placeholder="Entrez votre nom" maxlenght="20" minlenght="2" id="nom">
+                <br>
+                <label for="mail">Email :</label>
+                <input type="email" name="mail" placeholder="Entrez votre Email" id="mail">
+                <br>
+                <label for="age">Age :</label>
+                <input type="number" name="age" placeholder="Entrez votre age" id="age">
+                <br>
+                <label for="docs">Ma photo : </label>
+                <input type="file" id="docs" accept=".png, .jpg, .gif">
+            </fieldset>
+
+            <h3>Votre spécialité</h2>
+                <fieldset>
+                    <input type="checkbox" id="checkbox"><label for="checkbox">Le combat au fenouil</label>
+                    <br>
+                    <input type="checkbox" id="checkbox2"><label for="checkbox2">La cuisine</label>
+                    <br>
+                    <input type="checkbox" id="checkbox3"><label for="checkbox3">Le jeu du pelican</label>
+                    <br>
+                    <input type="checkbox" id="checkbox4"><label for="checkbox4">Ne rien faire</label>
+                </fieldset>
+
+
+                <!-- Pour les boutons Radio le name doit-etre le même pour tous-->
+                <h3>Sur une echelle de 2 à 76 vous êtes :</h3>
+                <fieldset>
+                    <input type="radio" id="radio1" name="radio"><label for="radio1">De 2 à 71, ça passe </label>
+                    <br>
+                    <input type="radio" id="radio2" name="radio"><label for="radio2">De 71 à 75, du passé faisons table
+                        en marbre</label>
+                    <br>
+                    <input type="radio" id="radio3" name="radio"><label for="radio3">Seulement à 76, vous vous prenez au
+                        serieux</label>
+                </fieldset>
+
+                <h3>Un commentaire ?</h3>
+                <fieldset>
+                    <textarea name="comment" id="comment" rows="5" column="30"></textarea>
+                </fieldset>
+
+                <!-- bouton de type "submit" obligatoire pour valider le formulaire -->
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>
+        <p>Conçu a vue de pif par les seigneurs Vincent et Nicolas, chevaliers de la table html</p>
+    </footer>
 </body>
+
 </html>
-
-<form method="POST" action="monProgramme.php">
-    <fieldset>
-        <legend>Infos personnelles</legend>
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" placeholder="Entrez votre prénom" maxlength="20" minlength="2" id="prenom">
-        <br>
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" placeholder="Entrez votre nom" maxlenght="20" minlenght="2" id="nom">
-        <br>
-        <label for="mail">Email :</label>
-        <input type="email" name="mail" placeholder="Entrez votre Email" id="mail">
-        <br>
-        <label for="age">Age :</label>
-        <input type="number" name="age" placeholder="Entrez votre age" id="age">
-        <br>
-        <label for="docs">Ma photo : </label>
-        <input type="file" id="docs" accept=".png, .jpg, .gif">
-    </fieldset>
-
-
-    <fieldset>
-        <legend>Votre spécialité</legend>
-        <input type="checkbox" id="checkbox"><label for="checkbox">Le combat au fenouil</label>
-        <br>
-        <input type="checkbox" id="checkbox2"><label for="checkbox2">La cuisine</label>
-        <br>
-        <input type="checkbox" id="checkbox3"><label for="checkbox3">Le jeu du pelican</label>
-        <br>
-        <input type="checkbox" id="checkbox4"><label for="checkbox4">Ne rien faire</label>
-    </fieldset>
-
-
-<!-- Pour les boutons Radio le name doit-etre le même pour tous-->
-    <fieldset>
-        <legend>Sur une echelle de 2 à 76 vous êtes :</legend>
-        <input type="radio" id="radio1" name="radio"><label for="radio1">De 2 à 71, ça passe </label>
-        <br>
-        <input type="radio" id="radio2" name="radio"><label for="radio2">De 71 à 75, du passé faisons table en marbre</label>
-        <br>
-        <input type="radio" id="radio3" name="radio"><label for="radio3">Seulement à 76, vous vous prenez au serieux</label>
-    </fieldset>
-
-
-    <fieldset>
-        <legend>Un commentaire ?</legend>
-        <textarea name="comment" id="comment" rows="5" column="30"></textarea>
-    </fieldset>
-
-<!-- bouton de type "submit" obligatoire pour valider le formulaire -->
-        <input type="submit" value="Envoyer">
-        <input type="reset" value="Reset">
-</form>
