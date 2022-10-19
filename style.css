@@ -39,22 +39,47 @@ header img {
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
 
 nav a {
     text-decoration: none;
 }
 
+/*nav ul li {
+    list-style: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}*/
+
+
 nav ul li {
     list-style: none;
-    height: 2em;
-    border-radius: 6px;
-    background: linear-gradient(145deg, #fff7cc, #dad0ac);
-    box-shadow: 7px 7px 14px #d0c7a4,
-        -7px -7px 14px #ffffda;
-}
+    height: 20px;
+    width: 100px;
+    justify-content: space-evenly;
+    color: #e7ba5a;
+    padding: 0.7em 1em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e7ba5a;
+    border: 1px solid #e7ba5a;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c49e4d,
+                -6px -6px 12px #ffd668;
+   }
+
+    nav ul li:active {
+    color: #e7ba5a;
+    box-shadow: inset 4px 4px 12px #c49e4d,
+                inset -4px -4px 12px #ffd668;
+    }
+
+    nav ul li a{
+        font-family: "Handwriting";
+    }
 
 #navbar {
     grid-column: 2;
@@ -140,8 +165,7 @@ fieldset {
     margin: 6px;
 }
 
-input,
-label {
+input,label {
     width: 200px;
     display: inline-block;
     vertical-align: top;
