@@ -26,7 +26,7 @@
         <input type="email" name="mail" placeholder="Entrez votre Email" id="mail">
         <br>
         <label for="age">Age :</label>
-        <input type="number" name="age" placeholder="age" id="age">
+        <input type="number" name="age" placeholder="Entrez votre age" id="age">
         <br>
         <label for="docs">Ma photo : </label>
         <input type="file" id="docs" accept=".png, .jpg, .gif">
@@ -35,11 +35,11 @@
 
     <fieldset>
         <legend>Votre spécialité</legend>
-        <input type="checkbox" id="checkbox"><label for="checkbox">HTML</label>
+        <input type="checkbox" id="checkbox"><label for="checkbox">Le combat au fenouil</label>
         <br>
-        <input type="checkbox" id="checkbox2"><label for="checkbox2">CSS</label>
+        <input type="checkbox" id="checkbox2"><label for="checkbox2">La cuisine</label>
         <br>
-        <input type="checkbox" id="checkbox3"><label for="checkbox3">JavaScript</label>
+        <input type="checkbox" id="checkbox3"><label for="checkbox3">Le jeu du pelican</label>
         <br>
         <input type="checkbox" id="checkbox4"><label for="checkbox4">Ne rien faire</label>
     </fieldset>
@@ -49,18 +49,22 @@
     <fieldset>
         <legend>Sur une echelle de 2 à 76 vous êtes :</legend>
         <input type="radio" id="radio1" name="radio"><label for="radio1">De 2 à 71, ça passe </label>
+        <br>
         <input type="radio" id="radio2" name="radio"><label for="radio2">De 71 à 75, du passé faisons table en marbre</label>
+        <br>
         <input type="radio" id="radio3" name="radio"><label for="radio3">Seulement à 76, vous vous prenez au serieux</label>
     </fieldset>
 
 
     <fieldset>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        
+        <legend>Un commentaire ?</legend>
+        <textarea name="comment" id="comment" rows="5" column="30"></textarea>
+    </fieldset>
+
 <!-- bouton de type "submit" obligatoire pour valider le formulaire -->
         <input type="submit" value="Envoyer">
 
         <input type="reset" value="Reset">
-    </fieldset>
+
 
 </form>
