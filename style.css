@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Handwriting";
+    src: url("fonts/handwriting-draft_free-version.ttf") format("opentype")
+}
+
+body
+{
+    background-color: #f2e7bf;
+}
+
+section
+{
+    display:flex;
+    flex-direction: column;
+}
+article
+{
+    display:flex;
+    max-width: 1024px;
+    border-radius: 10px;
+
+border: solid 1px black;
+    text-align: justify;
+}
+
+article div
+{
+    height: 100%;
+    padding-left: 1em;
+    
+}
+
+article img 
+{
+    margin:auto ;
+    padding: 1em;
+    height: 250px
+}
+
+h3
+{
+font-size: 2em;
+font-family: "Handwriting";
+}
+
+.citation{
+font-family: "Handwriting";
+color: grey;
+}
