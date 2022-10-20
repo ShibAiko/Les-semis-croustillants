@@ -99,8 +99,6 @@ nav ul li a{
     align-self: center;
 }
 */
-/*----------------- Rejoignez-nous -----------------*/
-
 
 
 .top-nav {
@@ -216,7 +214,6 @@ header div img {
     }
 }
 
-
 /*----------------- Articles -----------------*/
 
 article {
@@ -236,7 +233,7 @@ article div {
 article img {
     margin: auto;
     padding: 1em;
-    max-height: 250px
+    max-height: 250px;
 }
 
 h3 {
