@@ -11,20 +11,23 @@
 </head>
 
 <body>
-    <header>
-        <p id="blason"><img src="img/blason.png" alt="blason"></p>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="leClan.html">Le Clan</a></li>
-                <li><a href="lesAnecdotes.html">Annecdotes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p id="contact"><a href="contact.html">Rejoignez nous !</a></p>
+    <header class="top-nav">
+        <div>
+            <img id="blason" src="img/blason.png" alt="blason">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="leClan.html">Le Clan</a></li>
+            <li><a href="lesAnecdotes.html">Annecdotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
     <hr>
-
+    <hr>
     <footer>
         <p>Conçu a vue de pif par les seigneurs Vincent et Nicolas, chevaliers de la table html</p>
     </footer>
