@@ -10,17 +10,22 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="blason"><img src="img/blason.png" alt="Les semis-croustillants"></h1>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="leClan.html">Le Clan</a></li>
-                <li><a href="lesAnnecdotes.html">Annecdotes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="top-nav">
+        <div>
+            <img id="blason" src="img/blason.png" alt="blason">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="leClan.html">Le Clan</a></li>
+            <li><a href="lesAnecdotes.html">Annecdotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
+    <hr>
     <section>
         <h2>Rejoignez nous !</h2>
     </section>
@@ -41,7 +46,7 @@
                 <label for="age">Age :</label>
                 <input type="number" name="age" placeholder="Entrez votre age" id="age">
                 <br>
-                <label for="docs">Ma photo : </label>
+                <label for="docs">Ma Photo : </label>
                 <input type="file" id="docs" accept=".png, .jpg, .gif">
             </fieldset>
 
@@ -79,6 +84,7 @@
                 <input type="reset" value="Reset">
         </form>
     </div>
+    <hr>
     <footer>
         <p>Conçu a vue de pif par les seigneurs Vincent et Nicolas, chevaliers de la table html</p>
     </footer>

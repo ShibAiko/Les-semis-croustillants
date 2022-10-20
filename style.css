@@ -15,66 +15,144 @@ h2 {
     text-align: center;
 }
 
-/*------------ En-tête ------------*/
+/*----------------- En-tête -----------------*/
 
-header {
-    max-width: 1024px;
-    height: 200px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+.menu li a:hover {
+    color: white;
 }
 
-header img {
-    max-height: 100%;
-    width: auto;
+li a:visited {
+    color: black;
 }
 
-#blason {
-    grid-column: 1;
-    grid-row: 1 /span 2;
-    justify-self: center;
-    margin-top: 0px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-nav a {
+.menu li a {
     text-decoration: none;
 }
 
-nav ul li {
-    list-style: none;
-    height: 2em;
-    border-radius: 6px;
-    background: linear-gradient(145deg, #fff7cc, #dad0ac);
-    box-shadow: 7px 7px 14px #d0c7a4,
-        -7px -7px 14px #ffffda;
+
+/*----------------- Rejoignez-nous -----------------*/
+
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    max-width: 1024px;
+    height: 200px;
+    padding: 1em;
+    max-height: 100%;
+    width: auto;
+    font-family: "Handwriting";
+    box-sizing: border-box;
 }
 
-#navbar {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: flex-end;
-    text-align: center;
+header div img {
+    max-height: 200px;
+    width: auto;
 }
 
-#contact {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: center;
-    align-self: center;
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-/*------------ Articles ------------*/
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 200px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms;
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms;
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    li a:visited {
+        color: #e7ba5a;
+    }
+}
+
+
+/*----------------- Articles -----------------*/
 
 article {
     display: flex;
     max-width: 1024px;
+    max-height: ;
     border-radius: 10px;
     border: solid 1px black;
     text-align: justify;
@@ -82,15 +160,26 @@ article {
 }
 
 article div {
-    height: 100%;
-    padding-left: 1em;
+    padding: 1em;
 }
 
 article img {
     margin: auto;
     padding: 1em;
     height: 250px;
+    max-height: 250px;
 }
+
+aside img {
+    height: 250px;
+    max-height: 250px;
+    display: flex;
+    float: right;
+}
+
+    .video {
+        text-align: center;
+    }
 
 h3 {
     font-size: 2em;
@@ -112,7 +201,7 @@ audio {
 }
 
 
-/*----------- Formulaire ------------*/
+/*---------------- Formulaire -----------------*/
 
 .formulaire {
     margin: 1em;
@@ -148,10 +237,11 @@ label {
     margin: 6px;
 }
 
-/*------------ Footer ------------*/
+/*----------------- Footer -----------------*/
 
 footer {
     text-align: center;
+    font-family: "Handwriting";
 }
 
 @media only screen and (max-width: 1024px) {
@@ -169,4 +259,13 @@ footer {
         list-style-type: none;
         padding: 0;
     }
+
+    video {
+        max-height: 175px;
+        max-width: 320px;
+    }
+
+    aside {
+        display: grid;
+   }
 }

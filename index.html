@@ -11,20 +11,48 @@
 </head>
 
 <body>
-    <header>
-        <p id="blason"><img src="img/blason.png" alt="blason"></p>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="leClan.html">Le Clan</a></li>
-                <li><a href="annecdotes.html">Annecdotes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p id="contact"><a href="contact.html">Rejoignez nous !</a></p>
+    <header class="top-nav">
+        <div>
+            <img id="blason" src="img/blason.png" alt="blason">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="leClan.html">Le Clan</a></li>
+            <li><a href="lesAnecdotes.html">Annecdotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
     <hr>
-
+    <section>
+        <article>
+            <div>
+                <h3>Qui sommes-nous</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi tempore et! Nesciunt architecto eos delectus, dolorum quam non. Expedita ex ipsam, rem doloremque dicta magnam itaque esse. Ipsam, ex.
+                    Eius aliquid laboriosam obcaecati! Odio culpa veritatis quaerat quidem eveniet perspiciatis dignissimos consequatur sapiente animi tempora dolore, asperiores ratione aspernatur vel officiis laboriosam nihil a impedit minus. Praesentium, voluptatem soluta.
+                    Aspernatur reiciendis tempora accusamus rem sequi ipsum, ullam maxime, id, at ab recusandae similique aut explicabo? Perspiciatis dolorem deserunt officia mollitia dolorum illo quo quod ducimus ad voluptatum, corporis ipsum?
+                    Animi magni id nostrum vitae adipisci hic quae ad? Earum modi neque rem nemo omnis quis perferendis minima reiciendis, asperiores aspernatur. Exercitationem beatae id in placeat soluta non rem error.
+                    Necessitatibus quis hic dolorum praesentium minima aliquam delectus soluta eligendi facilis corrupti iusto obcaecati ex provident incidunt deleniti quasi doloremque magni, quae suscipit accusamus nulla tenetur error? Placeat, doloribus! Rerum?
+                </p>
+            </div>
+            <aside>
+                <img src="img/Logres.png" alt="image du royaume de l'ogre">
+                <p>
+                    À ≈ 60 km du Château de Kaamelott d'après le roi Arthur.
+                    À 4 lieues du Château de Kaamelott selon Perceval.
+                </p>
+            </aside>
+        </article>
+        <div class="video">
+            <video src="video/Générique de Kaamelott (360p).mp4" controls>
+            </video>
+        </div>
+    </section>
+    <hr>
     <footer>
         <p>Conçu a vue de pif par les seigneurs Vincent et Nicolas, chevaliers de la table html</p>
     </footer>
