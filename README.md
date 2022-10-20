@@ -10,5 +10,5 @@ responsive: - Contenu / Vincent
         -Nav bar / Nicolas
 
 présentation :
-- Site du clan avec presentation du clan, des membres, des anecdotes, avec formulaire d'inscritpion pour adhérer au clan.
+- Site du clan avec presentation du clan, des membres, des anecdotes, avec formulaire d'inscription pour adhérer au clan.
  
