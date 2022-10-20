@@ -151,7 +151,7 @@ header div img {
 article {
     display: flex;
     max-width: 1024px;
-    max-height: ;
+
     border-radius: 10px;
     border: solid 1px black;
     text-align: justify;
