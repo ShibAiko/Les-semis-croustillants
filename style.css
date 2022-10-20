@@ -89,7 +89,7 @@ article div {
 article img {
     margin: auto;
     padding: 1em;
-    height: 250px
+    height: 250px;
 }
 
 h3 {
@@ -155,18 +155,18 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-    .article {
+
+    body {
+        margin: 0em 1em 0em 1em;
+    }
+    
+    article {
         display: grid;
-        grid-template-rows: 0.3fr 1fr 1fr;
         text-align: justify;
     }
 
     ul {
         list-style-type: none;
         padding: 0;
-    }
-
-    body {
-        margin: 0em 1em 0em 1em;
     }
 }
