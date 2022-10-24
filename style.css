@@ -157,6 +157,7 @@ aside img {
     max-height: 250px;
     display: flex;
     float: right;
+    filter: drop-shadow(5px 5px 10px black);
 }
 
 .video {
