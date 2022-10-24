@@ -160,11 +160,11 @@ article {
 
 
 article:nth-child(odd) {
-    background-color: #d4b265 ;
+    background-color: #d4b265;
 }
 
-article:nth-child(even){
-    background-color: #ebc570 ;
+article:nth-child(even) {
+    background-color: #ebc570;
 }
 
 article div {
@@ -172,12 +172,16 @@ article div {
 }
 
 article img {
-   margin-top: auto;
-   margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 1em;
     height: 250px;
     max-height: 250px;
 
+}
+
+aside {
+    margin-right: 1em;
 }
 
 aside img {
@@ -187,9 +191,9 @@ aside img {
     float: right;
 }
 
-    .video {
-        text-align: center;
-    }
+.video {
+    text-align: center;
+}
 
 h3 {
     font-size: 2em;
@@ -259,7 +263,7 @@ footer {
     body {
         margin: 0em 1em 0em 1em;
     }
-    
+
     article {
         display: grid;
         text-align: justify;
@@ -277,5 +281,5 @@ footer {
 
     aside {
         display: grid;
-   }
+    }
 }
