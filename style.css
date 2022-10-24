@@ -147,6 +147,10 @@ article img {
     max-height: 250px;
 }
 
+article ul li{
+    margin-bottom: 1em;
+}
+
 aside {
     margin-right: 1em;
     margin-left: 1em;
