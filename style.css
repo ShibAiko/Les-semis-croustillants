@@ -4,9 +4,11 @@
 }
 
 body {
-    background-color: #e7ba5a;
+    background-image: url(img/Stained-Timber-Architextures.jpg);
+    /*background-color: #e7ba5a;*/
     max-width: 1024px;
     margin: 0 auto;
+
 }
 
 h2 {
@@ -104,7 +106,7 @@ header div img {
 
 article {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     max-width: 1024px;
     border-radius: 10px;
     border: solid 1px black;
@@ -175,8 +177,8 @@ audio {
     margin: 1em;
     border-radius: 20px;
     background: #e7ba5a;
-    box-shadow: 23px 23px 46px #c09a4b,
-        -23px -23px 46px #ffda69;
+    /*box-shadow: 23px 23px 46px #c09a4b,
+        -23px -23px 46px #ffda69;*/
     text-align: center;
     padding: 1em;
 }
