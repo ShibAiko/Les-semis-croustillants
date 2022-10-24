@@ -303,4 +303,8 @@ footer {
         background-color: #222;
     }
 
+    footer {
+        font-size: smaller;
+    }
+
 }
