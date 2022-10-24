@@ -158,6 +158,15 @@ article {
     margin-bottom: 1em;
 }
 
+
+article:nth-child(odd) {
+    background-color: #d4b265 ;
+}
+
+article:nth-child(even){
+    background-color: #ebc570 ;
+}
+
 article div {
     padding: 1em;
 }
