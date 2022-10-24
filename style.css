@@ -150,8 +150,8 @@ header div img {
 
 article {
     display: flex;
+    justify-content: space-between;
     max-width: 1024px;
-
     border-radius: 10px;
     border: solid 1px black;
     text-align: justify;
@@ -163,10 +163,12 @@ article div {
 }
 
 article img {
-    margin: auto;
+   margin-top: auto;
+   margin-bottom: auto;
     padding: 1em;
     height: 250px;
     max-height: 250px;
+
 }
 
 aside img {
