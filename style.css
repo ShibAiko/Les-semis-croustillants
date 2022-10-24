@@ -50,14 +50,15 @@ li a:visited {
     box-sizing: border-box;
 }
 
-.top-nav ul li{
-    
+.top-nav ul li {
+
     background-color: #d4b265;
     border-radius: 5px;
     box-shadow: 1px 1px 5px black;
     padding: 0.5em;
 }
-.top-nav ul li a{
+
+.top-nav ul li a {
     padding: 0.5em;
 }
 
@@ -223,6 +224,7 @@ label {
 footer {
     text-align: center;
     font-family: "Handwriting";
+    color: white;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -255,7 +257,7 @@ footer {
         display: grid;
     }
 
-    aside img{
+    aside img {
         margin-left: auto;
         margin-right: auto;
     }
