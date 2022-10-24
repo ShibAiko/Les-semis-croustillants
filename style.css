@@ -50,6 +50,17 @@ li a:visited {
     box-sizing: border-box;
 }
 
+.top-nav ul li{
+    
+    background-color: #d4b265;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    padding: 0.5em;
+}
+.top-nav ul li a{
+    padding: 0.5em;
+}
+
 header div img {
     max-height: 200px;
     width: auto;
